@@ -1,0 +1,12 @@
+---
+fullname: Feature icon set
+ribbon: 903400
+icons:
+  - Facebook
+  - Google
+  - Habr
+  - Skype
+  - Twitter
+  - Vk
+  - Yandex
+---

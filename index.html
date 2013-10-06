@@ -7,7 +7,7 @@ layout: default
     <article>
       <h1 class="set-caption">{{ post.fullname }}</h1>
       
-      <ul class="icon-list icon-list-by3">
+      <ul class="icon-list">
         {% for icon in post.icons %}
           <li class="icon-item"><img alt="{{ icon }}" src="icons/{{ post.title | downcase }}/{{ icon | downcase}}.png" title="{{ icon }}"></li>
         {% endfor %}

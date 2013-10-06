@@ -1,0 +1,21 @@
+---
+fullname: Feature icon set
+ribbon: d84648
+icons:
+  - Fallout computer
+  - Fallout folder
+  - Fallout network
+  - Fallout trash
+  - Feature computer
+  - Feature folder
+  - Feature network
+  - Feature trash
+  - Man in black computer
+  - Man in black folder
+  - Man in black network
+  - Man in black trash
+  - Matrix computer
+  - Matrix folder
+  - Matrix network
+  - Matrix trash
+---
