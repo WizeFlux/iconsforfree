@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+<head>
+	<title>ICONS FOR FREE</title>
+	<meta charset="UTF8">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-logo">
+      <div class="header-line line"></div>
+      <div class="header-logo-item"></div>
+    </div>
+    <header>
+      <h1 class="header-caption">ICONS FOR FREE</h1>
+      <p class="header-descr">These Icons and mini illustrations were created by me for themselves or simply weren't useful during work on any projects. All graphics can be downloaded and used  for non-commercial and commercial purposes</p>
+      <p class="header-subscribe">
+        Best Regards <span class="author">Ilya Denisenko</span>
+      </p>
+    </header>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="footer">
+    <div class="footer-line line"></div>
+    <div class="footer-logo"></div>
+    <div class="footer-info">
+      <footer>
+        <h2 class="footer-name">Denisenko ILYA</h2>
+        <a href="http://behance.net" class="footer-link">Portfolio on behance.net</a><br>
+        <a href="http://idenisenko.ru" class="footer-link">My site idenisenko.ru</a><br>
+        <a href="mailto:denisenkoiv@gmail.com" class="footer-mail"> denisenkoiv@gmail.com </a>
+      </footer>
+    </div>
+  </div>
+</body>
 </html>

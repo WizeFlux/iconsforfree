@@ -1,13 +1,40 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+
+{% for iconset in site.iconsets %}
+  <div class="set">
+    <article>
+      <h1 class="set-caption">Habrahabr badges</h1>
+      <ul class="icon-list icon-list-by3">
+        <li class="icon-item"><img alt="Legend" src="img/Legend.png" title="Legend"></li>
+        <li class="icon-item"><img alt="Star" src="img/Star.png" title="Star"></li>
+        <li class="icon-item"><img alt="Author" src="img/Author.png" title="Author"></li>
+        <li class="icon-item"><img alt="Translator" src="img/Translator.png" title="Translator"></li>
+        <li class="icon-item"><img alt="Podkaster" src="img/Podkaster.png" title="Podkaster"></li>
+        <li class="icon-item"><img alt="Humorist" src="img/Humorist.png" title="Humorist"></li>
+        <li class="icon-item"><img alt="Old resident" src="img/Old%20resident.png" title="Old resident"></li>
+        <li class="icon-item"><img alt="Commentator" src="img/Commentator.png" title="Commentator"></li>
+        <li class="icon-item"><img alt="Troll" src="img/Troll.png" title="Troll"></li>
+      </ul>
+      <div class="set-subscribe">
+        <section>
+          <h2 class="name-caption">Icons:</h2>
+          <ul class="name-list">
+            <li class="name-item">Legend</li>
+            <li class="name-item">Star</li>
+            <li class="name-item">Author</li>
+            <li class="name-item">Translator</li>
+            <li class="name-item">Podkaster</li>
+            <li class="name-item">Humorist</li>
+            <li class="name-item">Old resident</li>
+            <li class="name-item">Commentator</li>
+            <li class="name-item">Troll</li>
+          </ul>
+        </section>
+        <a href="#" class="popup-link">Download</a>
+      </div>
+    </article>
+  </div>
+{% endfor %}
