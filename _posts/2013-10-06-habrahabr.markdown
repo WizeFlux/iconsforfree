@@ -1,5 +1,6 @@
 ---
 fullname: Habrahabr bages
+ribbon: 5f21f4
 icons:
   - Legend
   - Star

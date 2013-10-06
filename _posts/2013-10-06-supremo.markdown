@@ -1,5 +1,6 @@
 ---
 fullname: Supremo supercool!
+ribbon: 5f21f4
 icons:
   - Legend
   - Star
