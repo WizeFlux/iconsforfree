@@ -3,38 +3,29 @@ layout: default
 ---
 
 
-{% for iconset in site.iconsets %}
+{% for post in site.posts %}
   <div class="set">
     <article>
-      <h1 class="set-caption">Habrahabr badges</h1>
+      <h1 class="set-caption">{{ post.fullname }}</h1>
+      
       <ul class="icon-list icon-list-by3">
-        <li class="icon-item"><img alt="Legend" src="img/Legend.png" title="Legend"></li>
-        <li class="icon-item"><img alt="Star" src="img/Star.png" title="Star"></li>
-        <li class="icon-item"><img alt="Author" src="img/Author.png" title="Author"></li>
-        <li class="icon-item"><img alt="Translator" src="img/Translator.png" title="Translator"></li>
-        <li class="icon-item"><img alt="Podkaster" src="img/Podkaster.png" title="Podkaster"></li>
-        <li class="icon-item"><img alt="Humorist" src="img/Humorist.png" title="Humorist"></li>
-        <li class="icon-item"><img alt="Old resident" src="img/Old%20resident.png" title="Old resident"></li>
-        <li class="icon-item"><img alt="Commentator" src="img/Commentator.png" title="Commentator"></li>
-        <li class="icon-item"><img alt="Troll" src="img/Troll.png" title="Troll"></li>
+        {% for icon in post.icons %}
+          <li class="icon-item"><img alt="{{ icon }}" src="icons/{{ post.title | downcase }}/{{ icon }}.png" title="{{ icon | downcase }}"></li>
+        {% endfor %}
       </ul>
+      
       <div class="set-subscribe">
         <section>
           <h2 class="name-caption">Icons:</h2>
           <ul class="name-list">
-            <li class="name-item">Legend</li>
-            <li class="name-item">Star</li>
-            <li class="name-item">Author</li>
-            <li class="name-item">Translator</li>
-            <li class="name-item">Podkaster</li>
-            <li class="name-item">Humorist</li>
-            <li class="name-item">Old resident</li>
-            <li class="name-item">Commentator</li>
-            <li class="name-item">Troll</li>
+            {% for icon in post.icons %}
+              <li class="name-item">{{ icon }}</li>
+            {% endfor %}
           </ul>
         </section>
         <a href="#" class="popup-link">Download</a>
       </div>
+      
     </article>
   </div>
 {% endfor %}
